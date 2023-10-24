@@ -1,0 +1,17 @@
+  red,
+  orange,
+  amber,
+  yellow,
+  lime,
+  green,
+  teal,
+  cyan,
+  sky,
+  blue,
+  violet,
+  purple,
+  fuchsia,
+  pink,
+  rose,
+  gray
+

@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kargo
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: kargo
+    server: 'https://kubernetes.default.svc'
+  project: kargo
+  sources:
+    - chart: kargo
+      helm:
+        valueFiles:
+          - $values/kargo-values.yaml
+      repoURL: ghcr.io/akuity/kargo-charts
+      targetRevision: 0.1.x
+    - ref: values
+      repoURL: 'https://github.com/tal-hason/kargo-test.git'
+      targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
