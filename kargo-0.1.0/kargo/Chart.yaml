@@ -10,4 +10,4 @@ name: kargo
 sources:
 - https://github.com/akuity/kargo
 type: application
-version: 0.1.0
+version: 0.1.1-rc.1
