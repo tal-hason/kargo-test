@@ -11,7 +11,7 @@ spec:
     helm:
       valueFiles:
         - kargo-values.yaml
-    path: kargo-0.1.0/kargo
+    path: kargo-0.2.1/kargo
     repoURL: 'https://github.com/tal-hason/kargo-test.git'
     targetRevision: main
   syncPolicy:
