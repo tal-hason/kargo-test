@@ -6,9 +6,10 @@
 ## @section Image Parameters
 image:
   ## @param image.repository Image repository of Kargo
-  repository: ghcr.io/akuity/kargo
+  repository: ghcr.io/krancour/kargo
+  # repository: ghcr.io/akuity/kargo
   ## @param image.tag Overrides the image tag. The default tag is the value of `.Chart.AppVersion`
-  tag: ""
+  tag: for-tal
   ## @param image.pullPolicy Image pull policy
   pullPolicy: IfNotPresent
 
