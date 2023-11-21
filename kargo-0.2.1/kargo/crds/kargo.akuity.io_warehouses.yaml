@@ -151,7 +151,8 @@ spec:
                             lead to the unanticipated rollout of breaking changes.
                             Refer to Image Updater documentation for more details.
                           type: string
-                        updateStrategy:
+                        # updateStrategy:
+                        tagSelectionStrategy:
                           default: SemVer
                           description: UpdateStrategy specifies the rules for how
                             to identify the newest version of the image specified
