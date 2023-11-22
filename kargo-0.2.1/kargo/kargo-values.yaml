@@ -6,10 +6,10 @@
 ## @section Image Parameters
 image:
   ## @param image.repository Image repository of Kargo
-  repository: docker.io/krancour/kargo
+  repository: quay.io/thason/kargo
   # repository: ghcr.io/akuity/kargo
   ## @param image.tag Overrides the image tag. The default tag is the value of `.Chart.AppVersion`
-  tag: soylent-green
+  tag: dev
   ## @param image.pullPolicy Image pull policy
   pullPolicy: IfNotPresent
 
