@@ -240,6 +240,7 @@ webhooksServer:
   enabled: true
   ## @param webhooksServer.replicas The number of webhooks server pods.
   replicas: 1
+  revisionHistoryLimit: 1
   ## @param webhooksServer.logLevel The log level for the webhooks server.
   logLevel: INFO
 
