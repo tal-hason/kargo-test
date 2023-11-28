@@ -104,7 +104,7 @@ api:
   ## method.
   oidc:
     ## @param api.oidc.enabled Whether to enable authentication using Open ID Connect.
-    enabled: true
+    enabled: false
     ## @param api.oidc.issuerURL The issuer URL for the identity provider. If Dex is enabled, this value will be ignored and the issuer URL will be automatically configured. If Dex is not enabled, this should be set to the issuer URL provided to you by your identity provider.
     issuerURL:
     ## @param api.oidc.clientID The client ID for the OIDC client. If Dex is enabled, this value will be ignored and the client ID will be automatically configured. If Dex is not enabled, this should be set to the client ID provided to you by your identity provider.
@@ -114,7 +114,7 @@ api:
 
     dex:
       ## @param api.oidc.dex.enabled Whether to enable Dex as the identity provider. When set to true, the Kargo installation will include a Dex server and the Kargo API server will be configured to make the /dex endpoint a reverse proxy for the Dex server.
-      enabled: true
+      enabled: false
 
       image: 
         ## @param api.oidc.dex.image.repository Image repository of Dex
