@@ -11,7 +11,7 @@ image:
   ## @param image.tag Overrides the image tag. The default tag is the value of `.Chart.AppVersion`
   tag: ""
   ## @param image.pullPolicy Image pull policy
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 ## @section RBAC
 rbac:
@@ -122,7 +122,7 @@ api:
         ## @param api.oidc.dex.image.tag Image tag for Dex.
         tag: v2.37.0
         ## @param api.oidc.dex.image.pullPolicy Image pull policy for Dex.
-        pullPolicy: IfNotPresent
+        pullPolicy: Always
 
       tls:
         ## @param api.oidc.dex.tls.selfSignedCert Whether to generate a self-signed certificate for use with Dex. If `true`, `cert-manager` CRDs **must** be present in the cluster. Kargo will create and use its own namespaced issuer. If `false`, a cert secret named `kargo-dex-server-cert` **must** be provided in the same namespace as Kargo. There is no provision for running Dex without TLS.
