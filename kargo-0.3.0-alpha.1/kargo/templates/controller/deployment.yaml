@@ -9,6 +9,7 @@ metadata:
     {{- include "kargo.controller.labels" . | nindent 4 }}
 spec:
   replicas: 1
+  revisionHistoryLimit: {{ .Values.controller.revisionHistoryLimit | default 10 }}
   strategy:
     type: Recreate
   selector:
